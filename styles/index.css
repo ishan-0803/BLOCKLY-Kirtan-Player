@@ -1,0 +1,92 @@
+body {
+  background-image: url("../images/KIRTANA.jpg");
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+main {
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+  overflow:hidden;
+  height: 600px;
+}
+
+header {
+  background-color: green;
+  width: 100%;
+}
+
+h1 {
+  width: 400px;
+  position: relative;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.8em;
+  line-height: 2.4em;
+}
+
+.mode-edit,
+.mode-maker,
+.mode-blockly {
+  display: none;
+  text-emphasis-color: white;
+}
+
+[mode="maker"] .mode-maker,
+[mode="edit"] .mode-edit,
+[mode="blockly"] .mode-blockly {
+  display: block;
+}
+
+.blockly-editor {
+  position: absolute;
+  top: 64px;
+  left: -400px;
+  transition: left .4s;
+  height: 460px;
+  width: 400px;
+  background-color: #eee;
+}
+
+[mode="blockly"] .blockly-editor {
+  left: 0;
+}
+
+.maker {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 460px;
+  width: 400px;
+}
+
+.maker > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 400px;
+  height: 30px;
+  border-radius: 30rem;
+  color: #fff;
+  font-size: 2em;
+  text-align: right;
+  /* vertical-align: top; */
+
+  /* vertical-align: bottom; */
+  line-height: 140px;
+}
+
+.mdl-button {
+  margin: 1em 0;
+  float: center;
+  background-color: #eee;
+}
+
+.hint{
+  color: #eee;
+  font-weight: 900;
+}
